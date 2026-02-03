@@ -696,6 +696,18 @@ def main():
             for name, path in meta_assets.items():
                 is_manifest = any(ext in name.lower() for ext in ['.checksums', '.sha256', '.sha1', '.md5'])
                 if is_manifest and not name.lower().endswith(('.sig', '.asc')):
+                    # Security: Verify the manifest itself if a signature exists
+                    manifest_sig_valid = False
+                    for s_ext in ['.sig', '.asc']:
+                        sig_name = name + s_ext
+                        if sig_name in meta_assets:
+                            if verify_gpg(gpg_tool, gpg_home, path, meta_assets[sig_name]) == "MATCH":
+                                manifest_sig_valid = True
+                                # print(f"  [+] Verified Signature for Manifest: {name}")
+                            else:
+                                print(f"  [CRITICAL] Manifest Signature INVALID for {name}")
+                            break
+                    
                     parsed = parse_checksums(path)
                     for fn, algos in parsed.items():
                         all_expected_hashes[fn].update(algos)
