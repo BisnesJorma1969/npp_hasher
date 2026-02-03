@@ -5490,7 +5490,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.0.Installer.arm64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:20+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5500,7 +5500,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.0.Installer.arm64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:20+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5510,7 +5510,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.0.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:21+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5520,7 +5520,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.0.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:21+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5530,7 +5530,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.8.0.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:17+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5540,7 +5540,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.8.0.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:17+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -10405,6 +10405,104 @@
       }
     ]
   },
+  "319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e": {
+    "md5": "8e3494bf8cf1967afd3b1016fbbe5bb0",
+    "sha1": "b1608abb6e19ef60f4b9c52f6e05bf81cc97d0c2",
+    "sha256": "319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e",
+    "size": 7804,
+    "occurrences": [
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.0.Installer.arm64.exe",
+        "path": "updater/LICENSE",
+        "date": "2021-12-07T19:40:20+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.0.Installer.exe",
+        "path": "updater/LICENSE",
+        "date": "2021-12-07T19:40:21+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.0.Installer.x64.exe",
+        "path": "updater/LICENSE",
+        "date": "2021-12-07T19:40:17+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.0.portable.7z",
+        "path": "updater/LICENSE",
+        "date": "2018-12-27T00:45:13.930432+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.0.portable.arm64.7z",
+        "path": "updater/LICENSE",
+        "date": "2017-12-13T21:44:48.576709+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.0.portable.arm64.zip",
+        "path": "updater/LICENSE",
+        "date": "2017-12-13T21:44:48.576709+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.0.portable.x64.7z",
+        "path": "updater/LICENSE",
+        "date": "2018-12-27T00:44:16.015949+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.0.portable.x64.zip",
+        "path": "updater/LICENSE",
+        "date": "2018-12-27T00:44:16.015949+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.0.portable.zip",
+        "path": "updater/LICENSE",
+        "date": "2018-12-27T00:45:13.930432+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      }
+    ]
+  },
   "afe980345a1e845fb7e372639205cc57e6902a2505c114dc1bcbcd56119f3413": {
     "md5": "16871739f1c1b2e562f522a60e6c218f",
     "sha1": "151386821ad471892bf099ebf8197adeee1c4d29",
@@ -10528,104 +10626,6 @@
         "installer": "npp.8.0.portable.zip",
         "path": "license.txt",
         "date": "2021-02-06T02:57:44.460317+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      }
-    ]
-  },
-  "319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e": {
-    "md5": "8e3494bf8cf1967afd3b1016fbbe5bb0",
-    "sha1": "b1608abb6e19ef60f4b9c52f6e05bf81cc97d0c2",
-    "sha256": "319917f5ccd09878db6f67c9a77dee846055644ca49eb535628b9e020a87261e",
-    "size": 7804,
-    "occurrences": [
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.0.Installer.arm64.exe",
-        "path": "updater/LICENSE",
-        "date": "2021-12-07T19:40:20+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.0.Installer.exe",
-        "path": "updater/LICENSE",
-        "date": "2021-12-07T19:40:21+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.0.Installer.x64.exe",
-        "path": "updater/LICENSE",
-        "date": "2021-12-07T19:40:17+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.0.portable.7z",
-        "path": "updater/LICENSE",
-        "date": "2018-12-27T00:45:13.930432+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.0.portable.arm64.7z",
-        "path": "updater/LICENSE",
-        "date": "2017-12-13T21:44:48.576709+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.0.portable.arm64.zip",
-        "path": "updater/LICENSE",
-        "date": "2017-12-13T21:44:48.576709+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.0.portable.x64.7z",
-        "path": "updater/LICENSE",
-        "date": "2018-12-27T00:44:16.015949+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.0.portable.x64.zip",
-        "path": "updater/LICENSE",
-        "date": "2018-12-27T00:44:16.015949+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.0.portable.zip",
-        "path": "updater/LICENSE",
-        "date": "2018-12-27T00:45:13.930432+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
       }

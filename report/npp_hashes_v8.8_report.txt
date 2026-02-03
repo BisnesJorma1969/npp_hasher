@@ -1,0 +1,27 @@
+WARNING: Logical file 'updater/gup.exe' (x64, v8.8.9) has 2 variants:
+    Hash 894b1f8c... : github::npp.8.8.9.Installer.x64.exe [updater/GUP.exe], github::npp.8.8.9.portable.x64.7z [updater/GUP.exe], github::npp.8.8.9.portable.x64.zip [updater/GUP.exe]
+    Hash 1365f496... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/updater/GUP.exe]
+WARNING: Logical file 'updater/libcurl.dll' (x64, v8.8.9) has 2 variants:
+    Hash e43a636e... : github::npp.8.8.9.Installer.x64.exe [updater/libcurl.dll], github::npp.8.8.9.portable.x64.7z [updater/libcurl.dll], github::npp.8.8.9.portable.x64.zip [updater/libcurl.dll]
+    Hash 873a5ca3... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/updater/libcurl.dll]
+WARNING: Logical file 'plugins/mimetools/mimetools.dll' (x64, v8.8.9) has 2 variants:
+    Hash 423d417b... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/plugins/mimeTools/mimeTools.dll]
+    Hash 09f64f12... : github::npp.8.8.9.portable.x64.7z [plugins/mimeTools/mimeTools.dll], github::npp.8.8.9.portable.x64.zip [plugins/mimeTools/mimeTools.dll]
+WARNING: Logical file 'notepad++.exe' (x64, v8.8.9) has 2 variants:
+    Hash a470014b... : github::npp.8.8.9.Installer.x64.exe [notepad++.exe], github::npp.8.8.9.portable.minimalist.x64.7z [notepad++.exe], github::npp.8.8.9.portable.x64.7z [notepad++.exe], github::npp.8.8.9.portable.x64.zip [notepad++.exe]
+    Hash d242a4a1... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/notepad++.exe]
+WARNING: Logical file 'plugins/nppconverter/nppconverter.dll' (x64, v8.8.9) has 2 variants:
+    Hash c68298d1... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/plugins/NppConverter/NppConverter.dll]
+    Hash e023f401... : github::npp.8.8.9.portable.x64.7z [plugins/NppConverter/NppConverter.dll], github::npp.8.8.9.portable.x64.zip [plugins/NppConverter/NppConverter.dll]
+WARNING: Logical file 'plugins/nppexport/nppexport.dll' (x64, v8.8.9) has 2 variants:
+    Hash feecba01... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/plugins/NppExport/NppExport.dll]
+    Hash 08177b6d... : github::npp.8.8.9.portable.x64.7z [plugins/NppExport/NppExport.dll], github::npp.8.8.9.portable.x64.zip [plugins/NppExport/NppExport.dll]
+WARNING: Logical file 'plugins/config/npppluginlist.dll' (x64, v8.8.9) has 2 variants:
+    Hash 58bdb0aa... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/plugins/config/nppPluginList.dll]
+    Hash 7d6da539... : github::npp.8.8.9.portable.x64.7z [plugins/Config/nppPluginList.dll], github::npp.8.8.9.portable.x64.zip [plugins/Config/nppPluginList.dll]
+WARNING: Logical file 'contextmenu/nppshell.dll' (x64, v8.8.9) has 2 variants:
+    Hash 6b1e9847... : github::npp.8.8.9.Installer.x64.exe [contextMenu/NppShell.dll]
+    Hash b78778bb... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/contextMenu/NppShell.dll]
+WARNING: Logical file 'contextmenu/nppshell.msix' (x64, v8.8.9) has 2 variants:
+    Hash e5220fa9... : github::npp.8.8.9.Installer.x64.exe [contextMenu/NppShell.msix]
+    Hash 5c0515f4... : github::npp.8.8.9.Installer.x64.msi [PFiles64/Notepad++/contextMenu/NppShell.msix]

@@ -1,6 +1,6 @@
-WARNING: Content 'langs.model.xml' (x64, v7.9) has 2 variants:
-    Hash aac52bba... : github::npp.7.9.Installer.x64.exe
-    Hash 70b60753... : github::npp.7.9.portable.minimalist.x64.7z, github::npp.7.9.portable.x64.7z, github::npp.7.9.portable.x64.zip
-WARNING: Content 'langs.model.xml' (x86, v7.9) has 2 variants:
-    Hash aac52bba... : github::npp.7.9.Installer.exe
-    Hash 70b60753... : github::npp.7.9.portable.7z, github::npp.7.9.portable.minimalist.7z, github::npp.7.9.portable.zip
+WARNING: Logical file 'langs.model.xml' (x64, v7.9) has 2 variants:
+    Hash aac52bba... : github::npp.7.9.Installer.x64.exe [langs.model.xml]
+    Hash 70b60753... : github::npp.7.9.portable.minimalist.x64.7z [langs.model.xml], github::npp.7.9.portable.x64.7z [langs.model.xml], github::npp.7.9.portable.x64.zip [langs.model.xml]
+WARNING: Logical file 'langs.model.xml' (x86, v7.9) has 2 variants:
+    Hash aac52bba... : github::npp.7.9.Installer.exe [langs.model.xml]
+    Hash 70b60753... : github::npp.7.9.portable.7z [langs.model.xml], github::npp.7.9.portable.minimalist.7z [langs.model.xml], github::npp.7.9.portable.zip [langs.model.xml]
