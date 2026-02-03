@@ -10183,494 +10183,6 @@
       }
     ]
   },
-  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
-    "md5": "d41d8cd98f00b204e9800998ecf8427e",
-    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "size": 0,
-    "occurrences": [
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.Installer.arm64.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-03-14T23:24:02+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.Installer.arm64.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-03-14T23:24:02+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.Installer.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-03-14T23:24:21+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.Installer.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-03-14T23:24:21+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.Installer.x64.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-03-14T23:24:35+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.Installer.x64.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-03-14T23:24:35+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.arm64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.arm64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.arm64.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.arm64.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.minimalist.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.minimalist.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.minimalist.arm64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.3.portable.minimalist.arm64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.minimalist.x64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.minimalist.x64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.x64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.x64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.x64.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.3.portable.x64.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.3",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.3.portable.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.Installer.arm64.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-02-15T15:42:27+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.Installer.arm64.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-02-15T15:42:27+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.Installer.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-02-15T15:42:33+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.Installer.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-02-15T15:42:33+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.Installer.x64.exe",
-        "path": "doLocalConf.xml",
-        "date": "2022-02-15T15:42:39+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.Installer.x64.exe",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2022-02-15T15:42:39+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.arm64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.arm64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.arm64.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.arm64.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.minimalist.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.minimalist.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.minimalist.arm64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "arm64",
-        "installer": "npp.8.3.1.portable.minimalist.arm64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.minimalist.x64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.minimalist.x64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.x64.7z",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.x64.7z",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.x64.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x64",
-        "installer": "npp.8.3.1.portable.x64.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.zip",
-        "path": "doLocalConf.xml",
-        "date": "2017-08-16T07:23:53.663879+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      },
-      {
-        "version": "8.3.1",
-        "source": "github",
-        "arch": "x86",
-        "installer": "npp.8.3.1.portable.zip",
-        "path": "nppLogNulContentCorruptionIssue.xml",
-        "date": "2021-12-05T14:43:57.266791+00:00",
-        "dist_hash_status": "MATCH",
-        "dist_gpg_status": "MATCH"
-      }
-    ]
-  },
   "e8ea78d16744b1a3bad3b5c703cfde6594a4a476fc14161cfeeab7f65f9c4f99": {
     "md5": "d8c5cae923d1f1e3412f131f9aefc279",
     "sha1": "daae56a030cbad6725ef20ac1e530940b6d224fc",
@@ -10946,7 +10458,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.3.1.Installer.arm64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2022-02-15T15:42:27+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -10956,7 +10468,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.3.1.Installer.arm64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2022-02-15T15:42:27+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -10966,7 +10478,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.3.1.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2022-02-15T15:42:33+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -10976,7 +10488,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.3.1.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2022-02-15T15:42:33+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -11074,7 +10586,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.3.3.Installer.arm64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2022-03-14T23:24:02+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -11084,7 +10596,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.3.3.Installer.arm64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2022-03-14T23:24:02+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25674,6 +25186,494 @@
         "installer": "npp.8.3.3.portable.zip",
         "path": "plugins/NppExport/NppExport.dll",
         "date": "2022-03-14T11:28:47.333047+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      }
+    ]
+  },
+  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {
+    "md5": "d41d8cd98f00b204e9800998ecf8427e",
+    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "occurrences": [
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.Installer.arm64.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-03-14T23:24:02+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.Installer.arm64.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-03-14T23:24:02+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.Installer.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-03-14T23:24:21+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.Installer.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-03-14T23:24:21+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.Installer.x64.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-03-14T23:24:35+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.Installer.x64.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-03-14T23:24:35+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.arm64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.arm64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.arm64.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.arm64.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.minimalist.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.minimalist.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.minimalist.arm64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.3.portable.minimalist.arm64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.minimalist.x64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.minimalist.x64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.x64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.x64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.x64.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.3.portable.x64.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.3",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.3.portable.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.Installer.arm64.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-02-15T15:42:27+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.Installer.arm64.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-02-15T15:42:27+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.Installer.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-02-15T15:42:33+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.Installer.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-02-15T15:42:33+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.Installer.x64.exe",
+        "path": "doLocalConf.xml",
+        "date": "2022-02-15T15:42:39+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.Installer.x64.exe",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2022-02-15T15:42:39+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.arm64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.arm64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.arm64.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.arm64.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.minimalist.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.minimalist.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.minimalist.arm64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "arm64",
+        "installer": "npp.8.3.1.portable.minimalist.arm64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.minimalist.x64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.minimalist.x64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.x64.7z",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.x64.7z",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.x64.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x64",
+        "installer": "npp.8.3.1.portable.x64.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.zip",
+        "path": "doLocalConf.xml",
+        "date": "2017-08-16T07:23:53.663879+00:00",
+        "dist_hash_status": "MATCH",
+        "dist_gpg_status": "MATCH"
+      },
+      {
+        "version": "8.3.1",
+        "source": "github",
+        "arch": "x86",
+        "installer": "npp.8.3.1.portable.zip",
+        "path": "nppLogNulContentCorruptionIssue.xml",
+        "date": "2021-12-05T14:43:57.266791+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
       }

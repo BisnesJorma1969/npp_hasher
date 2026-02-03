@@ -25318,7 +25318,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.4.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:18+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25328,7 +25328,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.4.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:18+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25338,7 +25338,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.4.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25348,7 +25348,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.4.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25506,7 +25506,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.2.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:05+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25516,7 +25516,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.2.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:05+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25574,7 +25574,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:23+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25584,7 +25584,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:23+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25662,7 +25662,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.9.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:19+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25672,7 +25672,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.9.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:19+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25762,7 +25762,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.8.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25772,7 +25772,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.8.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25850,7 +25850,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.1.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:09+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25860,7 +25860,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.1.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:09+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25938,7 +25938,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.5.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:15+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -25948,7 +25948,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.5.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:15+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26006,7 +26006,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.7.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26016,7 +26016,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.7.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:13+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26094,7 +26094,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.6.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:14+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26104,7 +26104,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.7.8.6.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:14+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26114,7 +26114,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.6.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:05+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -26124,7 +26124,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.7.8.6.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:05+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"

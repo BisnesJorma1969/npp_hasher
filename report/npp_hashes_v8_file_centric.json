@@ -5490,7 +5490,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.0.Installer.arm64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:20+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5500,7 +5500,7 @@
         "source": "github",
         "arch": "arm64",
         "installer": "npp.8.0.Installer.arm64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:20+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5510,7 +5510,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.0.Installer.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:21+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5520,7 +5520,7 @@
         "source": "github",
         "arch": "x86",
         "installer": "npp.8.0.Installer.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:21+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5530,7 +5530,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.8.0.Installer.x64.exe",
-        "path": "$PLUGINSDIR/nppLocalization/english.xml",
+        "path": "localization/english.xml",
         "date": "2021-12-07T19:40:17+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"
@@ -5540,7 +5540,7 @@
         "source": "github",
         "arch": "x64",
         "installer": "npp.8.0.Installer.x64.exe",
-        "path": "localization/english.xml",
+        "path": "$PLUGINSDIR/nppLocalization/english.xml",
         "date": "2021-12-07T19:40:17+00:00",
         "dist_hash_status": "MATCH",
         "dist_gpg_status": "MATCH"

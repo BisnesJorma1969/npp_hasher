@@ -7627,7 +7627,7 @@
             }
           },
           {
-            "path": "localization/english.xml",
+            "path": "$PLUGINSDIR/nppLocalization/english.xml",
             "filename": "english.xml",
             "size": 74750,
             "date": "2021-12-07T19:40:06+00:00",
@@ -7638,7 +7638,7 @@
             }
           },
           {
-            "path": "$PLUGINSDIR/nppLocalization/english.xml",
+            "path": "localization/english.xml",
             "filename": "english.xml",
             "size": 74750,
             "date": "2021-12-07T19:40:06+00:00",
@@ -18530,7 +18530,7 @@
             }
           },
           {
-            "path": "localization/english.xml",
+            "path": "$PLUGINSDIR/nppLocalization/english.xml",
             "filename": "english.xml",
             "size": 74693,
             "date": "2021-12-07T19:40:18+00:00",
@@ -18541,7 +18541,7 @@
             }
           },
           {
-            "path": "$PLUGINSDIR/nppLocalization/english.xml",
+            "path": "localization/english.xml",
             "filename": "english.xml",
             "size": 74693,
             "date": "2021-12-07T19:40:18+00:00",
@@ -20394,7 +20394,7 @@
             }
           },
           {
-            "path": "localization/english.xml",
+            "path": "$PLUGINSDIR/nppLocalization/english.xml",
             "filename": "english.xml",
             "size": 74693,
             "date": "2021-12-07T19:40:18+00:00",
@@ -20405,7 +20405,7 @@
             }
           },
           {
-            "path": "$PLUGINSDIR/nppLocalization/english.xml",
+            "path": "localization/english.xml",
             "filename": "english.xml",
             "size": 74693,
             "date": "2021-12-07T19:40:18+00:00",
