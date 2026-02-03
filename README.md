@@ -5,11 +5,13 @@ A tool designed to retrieve, extract, and verify constituent files of Notepad++ 
 ## Features
 
 - **Multi-Source Retrieval**: Simultaneously fetches releases from the GitHub API and scrapes the official Notepad++ website.
+- **Resilient Networking**: Implements exponential backoff retries (up to 5 attempts) for transient errors (HTTP 502, timeouts) and graceful error handling to prevent session loss.
 - **Strict Multi-Algorithm Verification**: Automatically collects available checksum files (`.sha256`, `.sha1`, `.md5`, `.checksums`). It verifies assets against every matching hash found; if even one algorithm fails, the asset is flagged as a `MISMATCH`.
-- **Deep Extraction**:
-    - **MSI**: Performs dual extraction—reconstructing the "installed" file tree using `msitools` and extracting raw database tables/streams using `7-zip`. Includes a timestamp synchronization fix.
-    - **EXE/ZIP/7z**: Fully unpacks containers to hash individual components.
-- **Asset Hashing**: Processes binaries, archives, GPG signatures (`.sig`, `.asc`), and metadata files.
+- **Deep Extraction & Forensic Integrity**:
+    - **MSI**: Performs dual extraction—reconstructing the "installed" file tree using `msitools` and extracting raw database tables/streams using `7-zip`. Includes a stream-to-file timestamp synchronization fix.
+    - **EXE (NSIS)**: Automatically synchronizes extracted file timestamps with the installer's `Last-Modified` date to prevent date loss (critical for arm64 forensics).
+    - **Archives**: Preserves original archive file dates during extraction.
+- **Path Normalization**: Sophisticated logical path mapping allows accurate cross-installer comparison between different directory structures (e.g., mapping MSI prefixes and EXE-specific `nppLocalization` to a common logical tree).
 - **Discrepancy Analysis**: Automatically cross-references sources and package types. Discrepancies are grouped by hash in the final report to clearly show which installers align and which are outliers.
 - **File-Centric Reporting**: Generates a deduplicated JSON keyed by SHA256, allowing you to see every version and installer where a specific binary has appeared across the entire session.
 
@@ -79,7 +81,7 @@ The `_report.txt` file is the primary output for auditing. It flags:
 - **Source Mismatches**: When the same filename exists across multiple sources (GitHub, Website) but with differing content hashes.
 - **Package Inconsistencies**: When a file (e.g., `GUP.exe`) differs between the `.zip`, `.exe`, and `.msi` for the same release.
 - **Missing Assets (404)**: Explicitly logs historical assets that have been purged from the developer's server.
-- **Failed Extractions**: Containers that cannot be safely unpacked are treated as critical errors.
+- **Graceful Failure Handling**: Assets that fail download (after retries) or extraction are logged as `FAILED` in reports but do not terminate the session, ensuring long runs complete successfully.
 
 ## License
 
