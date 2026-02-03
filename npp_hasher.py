@@ -425,24 +425,56 @@ def parse_checksums(checksum_path):
                     found[fname][algo] = h
     return found
 
+def normalize_internal_path(path):
+    """
+    Normalizes internal paths from different installer types (EXE, MSI, ZIP) 
+    to a common logical structure for cross-comparison.
+    """
+    p = path.replace('\\', '/').lower().lstrip('/')
+    
+    # 1. Strip Installer-specific root prefixes
+    prefixes_to_strip = [
+        "pfiles64/notepad++/",
+        "pfiles/notepad++/",
+        "programfiles64/notepad++/",
+        "programfiles/notepad++/",
+        "$_24_/", # Often root/plugins
+        "$_26_/", # Often plugins/config
+        "$pluginsdir/",
+    ]
+    
+    for prefix in prefixes_to_strip:
+        if p.startswith(prefix):
+            p = p[len(prefix):]
+            break
+            
+    # 2. Map logical subdirectories that differ between installers
+    # EXE installer uses 'nppLocalization' while ZIP uses 'localization'
+    if p.startswith("npplocalization/"):
+        p = "localization/" + p[len("npplocalization/"):]
+    # GUP (updater) specific localization
+    elif p.startswith("guplocalization/"):
+        p = "updater/localization/" + p[len("guplocalization/"):]
+        
+    return p
+
 def analyze_discrepancies(data_list):
     """
     Compares installers and their contents across all sources for a version group.
-    Findings are sorted by filename for better readability.
+    Uses path normalization to align different installer formats.
     """
     findings = []
     installer_map = defaultdict(lambda: {})
+    # Map: (version, arch, normalized_path) -> {identifier: {hash, obj}}
     content_map = defaultdict(lambda: {})
-    filename_map = defaultdict(lambda: defaultdict(list))
     
     for release in data_list:
         src = release['source']
         version = release['version']
         for inst in release['installers']:
             fname = inst['filename']
-            # Only analyze files that were actually downloaded
             if 'hashes' in inst:
-                # Discrepancy key: version + filename
+                # Installer-level comparison
                 installer_key = (version, fname)
                 installer_map[installer_key][src] = {
                     'hash': inst['hashes']['sha256'],
@@ -451,21 +483,19 @@ def analyze_discrepancies(data_list):
                 
                 arch = inst['arch']
                 for content in inst['contents']:
-                    norm_path = content['path'].replace('\\', '/').lower()
-                    filename = content['filename'].lower()
+                    raw_path = content['path'].replace('\\', '/')
+                    norm_path = normalize_internal_path(raw_path)
                     h = content['hashes']['sha256']
                     
-                    # 1. Strict Path-based mapping
                     key = (version, arch, norm_path)
                     identifier = f"{src}::{fname}"
+                    
+                    # Store both the normalized path and the original for reporting
                     content_map[key][identifier] = {
                         'hash': h,
-                        'obj': content
+                        'obj': content,
+                        'raw_path': raw_path
                     }
-                    
-                    # 2. Filename-based mapping (Fuzzy/Anomaly detection)
-                    fn_key = (version, arch, filename)
-                    filename_map[fn_key][h].append(f"{fname} ({norm_path})")
             elif inst.get('verified') == "MISSING (404)":
                 msg = f"MISSING: Asset {fname} ({src}, v{version}) returned 404."
                 findings.append({
@@ -473,7 +503,7 @@ def analyze_discrepancies(data_list):
                     'msg': msg
                 })
 
-    # 1. Source Discrepancies (Compare same installer across distribution channels)
+    # 1. Source Discrepancies (Same installer, different distribution channel)
     for (version, fname), sources in installer_map.items():
         if len(sources) > 1:
             hashes = set(s['hash'] for s in sources.values())
@@ -490,19 +520,19 @@ def analyze_discrepancies(data_list):
                  for s in sources.values():
                     s['obj']['discrepancy_note'] = f"Source verified ({len(sources)} matches)"
 
-    # 2. Content Discrepancies (Compare same binary across different installer types)
-    # A: Strict path matches
+    # 2. Content Discrepancies (Compare logically identical files across installers)
     for (version, arch, norm_path), variants in content_map.items():
         if len(variants) > 1:
             hash_groups = defaultdict(list)
             for ident, info in variants.items():
-                hash_groups[info['hash']].append(ident)
+                # Include raw path in the identifier for clarity if they differ
+                hash_groups[info['hash']].append(f"{ident} [{info['raw_path']}]")
             
             if len(hash_groups) > 1:
                 filename = norm_path.split('/')[-1]
-                msg = f"WARNING: Content '{norm_path}' ({arch}, v{version}) has {len(hash_groups)} variants:"
-                for h, installers in hash_groups.items():
-                    msg += f"\n    Hash {h[:8]}... : {', '.join(sorted(installers))}"
+                msg = f"WARNING: Logical file '{norm_path}' ({arch}, v{version}) has {len(hash_groups)} variants:"
+                for h, locations in hash_groups.items():
+                    msg += f"\n    Hash {h[:8]}... : {', '.join(sorted(locations))}"
                 
                 findings.append({
                     'sort_key': (filename.lower(), norm_path.lower(), arch),
@@ -511,21 +541,8 @@ def analyze_discrepancies(data_list):
                 for v in variants.values():
                     v['obj']['discrepancy_note'] = f"Content mismatch ({len(hash_groups)} variants)"
 
-    # B: Filename anomalies (Different hashes for same filename in different paths/installers)
-    for (version, arch, filename), hash_to_locs in filename_map.items():
-        if len(hash_to_locs) > 1:
-            # We already reported strict path mismatches above. 
-            # This catches "GUP.exe is different in MSI vs EXE" even if paths differ.
-            msg = f"ANOMALY: Filename '{filename}' ({arch}, v{version}) has {len(hash_to_locs)} unique variants across installers:"
-            for h, locs in hash_to_locs.items():
-                msg += f"\n    Hash {h[:8]}... : {', '.join(sorted(list(set(locs))))}"
-            
-            # Check if this message is already partially covered by strict matches to avoid double reporting
-            # but usually this adds valuable "cross-path" context.
-            findings.append({
-                'sort_key': (filename.lower(), "zzz_anomaly_" + filename.lower(), arch),
-                'msg': msg
-            })
+    findings.sort(key=lambda x: x['sort_key'])
+    return [f['msg'] for f in findings]
 
     # Final sort for the report
     findings.sort(key=lambda x: x['sort_key'])
