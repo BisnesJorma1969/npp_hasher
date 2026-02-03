@@ -592,10 +592,16 @@ def save_file_centric_json(data_list, filename):
     
     def get_sort_key(item):
         sha, info = item
-        first_occ = info['occurrences'][0]
-        path = first_occ['path'].replace('\\', '/')
-        fname = path.split('/')[-1].lower()
-        return (fname, path.lower(), sha)
+        # Find the most "dominant" filename among occurrences
+        filenames = []
+        for occ in info['occurrences']:
+            p = occ['path'].replace('\\', '/')
+            filenames.append(p.split('/')[-1].lower())
+        
+        # Sort by most common filename, then first path, then sha
+        dominant_fname = max(set(filenames), key=filenames.count)
+        first_path = info['occurrences'][0]['path'].replace('\\', '/').lower()
+        return (dominant_fname, first_path, sha)
 
     sorted_items = sorted(file_map.items(), key=get_sort_key)
     with open(filename, 'w') as f:
@@ -720,6 +726,8 @@ def main():
                             os.makedirs(ext_dir, exist_ok=True)
                             if unpack_asset(p, ext_dir, seven_zip_cmd, msi_tool):
                                 for root, _, files in os.walk(ext_dir):
+                                    if "_raw_msi" in root:
+                                        continue
                                     for f in files:
                                         fp = os.path.join(root, f)
                                         fi = get_file_info(fp)
@@ -792,6 +800,8 @@ def main():
                         os.makedirs(ext_dir, exist_ok=True)
                         if unpack_asset(p, ext_dir, seven_zip_cmd, msi_tool):
                             for root, _, files in os.walk(ext_dir):
+                                if "_raw_msi" in root:
+                                    continue
                                 for f in files:
                                     fp = os.path.join(root, f)
                                     fi = get_file_info(fp)
