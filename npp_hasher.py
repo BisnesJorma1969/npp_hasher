@@ -14,6 +14,7 @@ import re
 import tarfile
 import stat
 import email.utils
+import time
 from urllib.parse import urljoin
 from collections import defaultdict
 
@@ -22,42 +23,53 @@ WEBSITE_URL = "https://notepad-plus-plus.org/downloads/"
 SEVEN_ZIP_URL = "https://www.7-zip.org/a/7z2409-linux-x64.tar.xz"
 NPP_GPG_KEY_URL = "https://notepad-plus-plus.org/gpg/nppGpgPub.asc"
 
-def download_file(url, dest_path):
+def download_file(url, dest_path, max_retries=5):
     """
     Downloads a file with basic HTML detection to avoid 
     saving redirect/error pages as binaries. Preserves remote mtime.
+    Includes exponential backoff for transient errors.
     """
-    print(f"Downloading {url}...")
     req = urllib.request.Request(url, headers={'User-Agent': 'NPP-Hasher'})
-    try:
-        with urllib.request.urlopen(req) as response:
-            content_type = response.headers.get('Content-Type', '')
-            if 'text/html' in content_type:
-                 # Check for actual HTML content in the first 500 bytes
-                 preview = response.read(500)
-                 if b'<html' in preview.lower() or b'<!doctype html' in preview.lower():
-                     raise ValueError("Download failed: URL returned HTML (likely 404 or redirect page)")
-            
-            last_modified = response.headers.get('Last-Modified')
-            
-            with open(dest_path, 'wb') as out_file:
-                # If we read a preview for detection, write it first
-                if 'preview' in locals():
-                    out_file.write(preview)
-                shutil.copyfileobj(response, out_file)
-            
-            if last_modified:
-                try:
-                    dt = email.utils.parsedate_to_datetime(last_modified)
-                    mtime = dt.timestamp()
-                    os.utime(dest_path, (mtime, mtime))
-                except Exception as e:
-                    print(f"  [!] Failed to set mtime: {e}")
+    
+    for attempt in range(max_retries):
+        try:
+            print(f"Downloading {url}..." if attempt == 0 else f"Retrying {url} (Attempt {attempt+1}/{max_retries})...")
+            with urllib.request.urlopen(req) as response:
+                content_type = response.headers.get('Content-Type', '')
+                if 'text/html' in content_type:
+                     # Check for actual HTML content in the first 500 bytes
+                     preview = response.read(500)
+                     if b'<html' in preview.lower() or b'<!doctype html' in preview.lower():
+                         raise ValueError("Download failed: URL returned HTML (likely 404 or redirect page)")
+                
+                last_modified = response.headers.get('Last-Modified')
+                
+                with open(dest_path, 'wb') as out_file:
+                    # If we read a preview for detection, write it first
+                    if 'preview' in locals():
+                        out_file.write(preview)
+                    shutil.copyfileobj(response, out_file)
+                
+                if last_modified:
+                    try:
+                        dt = email.utils.parsedate_to_datetime(last_modified)
+                        mtime = dt.timestamp()
+                        os.utime(dest_path, (mtime, mtime))
+                    except Exception as e:
+                        print(f"  [!] Failed to set mtime: {e}")
+                return # Success
 
-    except urllib.error.HTTPError as e:
-        if e.code == 404:
-            raise ValueError("Download failed: 404 Not Found")
-        raise
+        except (urllib.error.HTTPError, urllib.error.URLError, ConnectionError) as e:
+            # Persistent errors (404) should not be retried
+            if isinstance(e, urllib.error.HTTPError) and e.code == 404:
+                raise ValueError("Download failed: 404 Not Found")
+            
+            if attempt < max_retries - 1:
+                wait = (2 ** attempt) * 5 # 5, 10, 20, 40, 80 seconds
+                print(f"  [!] Download error: {e}. Retrying in {wait}s...")
+                time.sleep(wait)
+            else:
+                raise
 
 def ensure_local_7z():
     """
@@ -721,7 +733,7 @@ def main():
                                 inst_obj['contents'].sort(key=lambda x: x['filename'].lower())
                             else:
                                 print(f"  [!!!] CRITICAL: Extraction FAILED for container {name}")
-                                sys.exit(1)
+                                inst_obj['discrepancy_note'] = "Extraction failed"
                         
                         rel_obj['installers'].append(inst_obj)
                         
@@ -733,8 +745,12 @@ def main():
                                 'discrepancy_note': "Upstream purge detected"
                             })
                         else:
-                            print(f"Error processing GitHub {name}: {e}")
-                            sys.exit(1)
+                            print(f"  [!] CRITICAL ERROR processing GitHub {name}: {e}")
+                            rel_obj['installers'].append({
+                                'filename': name, 'arch': get_arch(name), 
+                                'verified': "FAILED", 'url': url, 
+                                'discrepancy_note': f"Processing failed: {e}"
+                            })
                             
         if rel_obj['installers']:
             grouped_results[group_key].append(rel_obj)
@@ -789,7 +805,7 @@ def main():
                             inst_obj['contents'].sort(key=lambda x: x['filename'].lower())
                         else:
                             print(f"  [!!!] CRITICAL: Extraction FAILED for container {name}")
-                            sys.exit(1)
+                            inst_obj['discrepancy_note'] = "Extraction failed"
                     rel_obj['installers'].append(inst_obj)
                 except Exception as e:
                     if "Download failed" in str(e):
@@ -799,8 +815,12 @@ def main():
                             'discrepancy_note': str(e)
                         })
                     else:
-                        print(f"Error processing Website {name}: {e}")
-                        sys.exit(1)
+                        print(f"  [!] CRITICAL ERROR processing Website {name}: {e}")
+                        rel_obj['installers'].append({
+                            'filename': name, 'arch': get_arch(name), 
+                            'verified': "FAILED", 'url': dl_url, 
+                            'discrepancy_note': f"Processing failed: {e}"
+                        })
                         
         if rel_obj['installers']:
             grouped_results[group_key].append(rel_obj)
