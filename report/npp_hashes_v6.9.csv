@@ -1,0 +1,5 @@
+version,source,arch,installer_name,path,filename,internal_name,file_size,file_date,md5,sha1,sha256,dist_hash_status,dist_gpg_status,discrepancy_note,url
+6.9,website,x86,npp.6.9.Installer.exe,,npp.6.9.Installer.exe,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/6.x/6.9/npp.6.9.Installer.exe
+6.9,website,x86,npp.6.9.bin.zip,,npp.6.9.bin.zip,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/6.x/6.9/npp.6.9.bin.zip
+6.9,website,x86,npp.6.9.bin.7z,,npp.6.9.bin.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/6.x/6.9/npp.6.9.bin.7z
+6.9,website,x86,npp.6.9.bin.minimalist.7z,,npp.6.9.bin.minimalist.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/6.x/6.9/npp.6.9.bin.minimalist.7z

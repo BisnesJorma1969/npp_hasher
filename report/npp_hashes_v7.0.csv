@@ -1,0 +1,9 @@
+version,source,arch,installer_name,path,filename,internal_name,file_size,file_date,md5,sha1,sha256,dist_hash_status,dist_gpg_status,discrepancy_note,url
+7.0,website,x86,npp.7.Installer.exe,,npp.7.Installer.exe,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.Installer.exe
+7.0,website,x86,npp.7.bin.zip,,npp.7.bin.zip,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.zip
+7.0,website,x86,npp.7.bin.7z,,npp.7.bin.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.7z
+7.0,website,x86,npp.7.bin.minimalist.7z,,npp.7.bin.minimalist.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.minimalist.7z
+7.0,website,x64,npp.7.Installer.x64.exe,,npp.7.Installer.x64.exe,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.Installer.x64.exe
+7.0,website,x64,npp.7.bin.x64.zip,,npp.7.bin.x64.zip,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.x64.zip
+7.0,website,x64,npp.7.bin.x64.7z,,npp.7.bin.x64.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.x64.7z
+7.0,website,x64,npp.7.bin.minimalist.x64.7z,,npp.7.bin.minimalist.x64.7z,,0,,,,,MISSING (404/HTML),N/A,Download failed: 404 Not Found,https://notepad-plus-plus.org/repository/7.x/7.0/npp.7.bin.minimalist.x64.7z

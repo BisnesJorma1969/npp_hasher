@@ -1,0 +1,320 @@
+[
+  {
+    "version": "7.6.6",
+    "source": "website",
+    "installers": [
+      {
+        "filename": "npp.7.6.6.Installer.exe",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.Installer.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.Installer.exe.sig",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.Installer.exe.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.zip",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.zip.sig",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.zip.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.7z.sig",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.7z.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.minimalist.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.minimalist.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.minimalist.7z.sig",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.minimalist.7z.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.Installer.x64.exe",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.Installer.x64.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.Installer.x64.exe.sig",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.Installer.x64.exe.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.x64.zip",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.x64.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.x64.zip.sig",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.x64.zip.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.x64.7z.sig",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.x64.7z.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.minimalist.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.minimalist.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.bin.minimalist.x64.7z.sig",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.bin.minimalist.x64.7z.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.checksums.sha256",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.checksums.sha256",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.6.checksums.sha256.sig",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.6/npp.7.6.6.checksums.sha256.sig",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      }
+    ]
+  },
+  {
+    "version": "7.6.4",
+    "source": "website",
+    "installers": [
+      {
+        "filename": "npp.7.6.4.Installer.exe",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.Installer.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.zip",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.minimalist.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.minimalist.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.Installer.x64.exe",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.Installer.x64.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.x64.zip",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.x64.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.4.bin.minimalist.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.4/npp.7.6.4.bin.minimalist.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      }
+    ]
+  },
+  {
+    "version": "7.6.3",
+    "source": "website",
+    "installers": [
+      {
+        "filename": "npp.7.6.3.Installer.exe",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.Installer.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.zip",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.minimalist.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.minimalist.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.Installer.x64.exe",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.Installer.x64.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.x64.zip",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.x64.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.3.bin.minimalist.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.bin.minimalist.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      }
+    ]
+  },
+  {
+    "version": "7.6.2",
+    "source": "website",
+    "installers": [
+      {
+        "filename": "npp.7.6.2.Installer.exe",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.Installer.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.zip",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.minimalist.7z",
+        "arch": "x86",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.minimalist.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.Installer.x64.exe",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.Installer.x64.exe",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.x64.zip",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.x64.zip",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      },
+      {
+        "filename": "npp.7.6.2.bin.minimalist.x64.7z",
+        "arch": "x64",
+        "verified": "MISSING (404/HTML)",
+        "url": "https://notepad-plus-plus.org/repository/7.x/7.6.2/npp.7.6.2.bin.minimalist.x64.7z",
+        "discrepancy_note": "Download failed: 404 Not Found"
+      }
+    ]
+  }
+]
