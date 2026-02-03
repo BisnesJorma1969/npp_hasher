@@ -13,6 +13,7 @@ import datetime
 import re
 import tarfile
 import stat
+import email.utils
 from urllib.parse import urljoin
 from collections import defaultdict
 
@@ -24,7 +25,7 @@ NPP_GPG_KEY_URL = "https://notepad-plus-plus.org/gpg/nppGpgPub.asc"
 def download_file(url, dest_path):
     """
     Downloads a file with basic HTML detection to avoid 
-    saving redirect/error pages as binaries.
+    saving redirect/error pages as binaries. Preserves remote mtime.
     """
     print(f"Downloading {url}...")
     req = urllib.request.Request(url, headers={'User-Agent': 'NPP-Hasher'})
@@ -37,11 +38,22 @@ def download_file(url, dest_path):
                  if b'<html' in preview.lower() or b'<!doctype html' in preview.lower():
                      raise ValueError("Download failed: URL returned HTML (likely 404 or redirect page)")
             
+            last_modified = response.headers.get('Last-Modified')
+            
             with open(dest_path, 'wb') as out_file:
                 # If we read a preview for detection, write it first
                 if 'preview' in locals():
                     out_file.write(preview)
                 shutil.copyfileobj(response, out_file)
+            
+            if last_modified:
+                try:
+                    dt = email.utils.parsedate_to_datetime(last_modified)
+                    mtime = dt.timestamp()
+                    os.utime(dest_path, (mtime, mtime))
+                except Exception as e:
+                    print(f"  [!] Failed to set mtime: {e}")
+
     except urllib.error.HTTPError as e:
         if e.code == 404:
             raise ValueError("Download failed: 404 Not Found")
@@ -294,6 +306,7 @@ def unpack_asset(asset_path, extract_dir, seven_zip_cmd, msi_tool):
     """
     Unpacks assets. 
     For MSI, performs dual-view extraction and timestamp synchronization.
+    For EXE (NSIS), synchronizes timestamps from the installer to extracted files.
     """
     if asset_path.lower().endswith('.msi'):
         # 1. Extract human-readable "installed" view
@@ -345,9 +358,22 @@ def unpack_asset(asset_path, extract_dir, seven_zip_cmd, msi_tool):
          try:
             with zipfile.ZipFile(asset_path, 'r') as z:
                 z.extractall(extract_dir)
-            return True
+            res = 0
          except:
             pass
+    
+    if res == 0 and asset_path.lower().endswith('.exe'):
+        # NSIS extraction often loses timestamps (especially arm64).
+        # Sync all extracted files to the installer's timestamp.
+        mtime = os.path.getmtime(asset_path)
+        for root, _, files in os.walk(extract_dir):
+            for f in files:
+                fp = os.path.join(root, f)
+                try:
+                    os.utime(fp, (mtime, mtime))
+                except:
+                    continue
+
     return res == 0
 
 def get_arch(filename):
